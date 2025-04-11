@@ -1,0 +1,17 @@
+import objetos.*
+import bolichito.*
+import personas.*
+
+test "A Rosa_: le gustan las cosas que pesan 2 kilos o menos." {
+  assert.that(rosa.leGusta(pelota))
+}
+test "A Rosa_: no le gustan las cosas que pesan mas de 2 kilos" {
+  assert.notThat(rosa.leGusta(biblioteca))
+}
+test "A estefania le gustan las cosas de colores fuertes" {
+  assert.that(estefania.leGusta(remera))
+}
+
+test "A estefania no le gustan las cosas de colores debiles" {
+  assert.notThat(estefania.leGusta(munieco))
+}
